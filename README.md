@@ -3,13 +3,6 @@ cookiecutter-flask
 
 A(nother) Flask template for cookiecutter_.
 
-.. _cookiecutter: https://github.com/audreyr/cookiecutter
-
-.. image:: https://travis-ci.org/douglas/cookiecutter-flask.svg
-    :target: https://travis-ci.org/douglas/cookiecutter-flask
-    :alt: Build Status
-
-
 Use it now
 ----------
 ::
