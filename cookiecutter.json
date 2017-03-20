@@ -1,0 +1,8 @@
+{
+    "full_name": "Inform you name",
+    "email": "Inform your email",
+    "github_username": "Inform your github username",
+    "project_name": "My Flask App",
+    "app_name": "myflaskapp",
+    "project_short_description": "A beautiful flask app."
+}

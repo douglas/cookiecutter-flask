@@ -1,0 +1,13 @@
+[dev-packages]
+pytest = "*"
+pytest-sugar = "*"
+pdbpp = "*"
+honcho = "*"
+WebTest = "*"
+Flask-DebugToolbar = "*"
+
+[packages]
+envparse = "*"
+gunicorn = "*"
+Flask = "*"
+Flask-Babel = "*"
