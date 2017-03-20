@@ -1,7 +1,7 @@
 cookiecutter-flask
 ==================
 
-A(nother) Flask template for cookiecutter_.
+A(nother) Flask template for cookiecutter.
 
 Use it now
 ----------
