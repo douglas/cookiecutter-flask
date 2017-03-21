@@ -8,9 +8,8 @@ from flask import Flask
 from flask_babel import Babel
 
 from {{cookiecutter.app_name}} import commands
-from {{cookiecutter.app_name}}.extensions import debug_toolbar
-from {{cookiecutter.app_name}}.settings import Production
 from {{cookiecutter.app_name}}.apps import public
+from {{cookiecutter.app_name}}.settings import CONFIG, Production
 
 
 def create_app(environment=Production):
@@ -31,7 +30,10 @@ def create_app(environment=Production):
 def register_extensions(app):
     """ Register Flask extensions. """
 
-    debug_toolbar.init_app(app)
+    if CONFIG.ENVIRONMENT == "development":
+        from flask_debugtoolbar import DebugToolbarExtension
+        debug_toolbar = DebugToolbarExtension()
+        debug_toolbar.init_app(app)
 
 
 def register_blueprints(app):

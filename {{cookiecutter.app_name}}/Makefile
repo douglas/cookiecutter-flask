@@ -20,3 +20,11 @@ frontend_deps:
 	cp "frontend/bower/font-awesome/fonts/fontawesome-webfont.woff" static/fonts
 	cp "frontend/bower/font-awesome/fonts/fontawesome-webfont.woff2" static/fonts
 	rm -rf frontend
+
+test:
+	pytest
+
+travis_test_pipenv:
+	pipenv lock
+	pipenv install --dev
+	pipenv run py.test
