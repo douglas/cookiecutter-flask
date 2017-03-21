@@ -3,6 +3,9 @@ cookiecutter-flask
 
 A(nother) Flask template for cookiecutter.
 
+.. image:: https://travis-ci.org/douglas/cookiecutter-flask.svg?branch=master
+    :target: https://travis-ci.org/douglas/cookiecutter-flask
+
 Use it now
 ----------
 ::
@@ -21,6 +24,7 @@ Features
 - Flask's Click CLI configured with simple commands
 - Optional bower support for frontend package management
 - Useful debug toolbar
+- i18n
 - Utilizes best practices: `Blueprints <http://flask.pocoo.org/docs/blueprints/>`_ and `Application Factory <http://flask.pocoo.org/docs/patterns/appfactories/>`_ patterns
 
 Inspiration

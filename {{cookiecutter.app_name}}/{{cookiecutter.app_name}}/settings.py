@@ -11,6 +11,7 @@ env.read_envfile()
 class Production(object):
     """ Production configuration """
 
+    ENVIRONMENT = "production"
     SECRET_KEY = env("SECRET")
     APP_DIR = os.path.abspath(os.path.dirname(__file__))
     PROJECT_ROOT = os.path.abspath(os.path.join(APP_DIR, os.pardir))
@@ -26,6 +27,7 @@ class Production(object):
 class Development(Production):
     """ Development configuration """
 
+    ENVIRONMENT = "development"
     DEBUG = True
     DEBUG_TB_ENABLED = True
     ASSETS_DEBUG = True
@@ -34,6 +36,7 @@ class Development(Production):
 class Test(Production):
     """ Test configuration. """
 
+    ENVIRONMENT = "test"
     TESTING = True
     DEBUG = True
 
